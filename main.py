@@ -105,7 +105,7 @@ def start_server():
     server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     try:
         server_socket.bind(("0.0.0.0", LISTEN_PORT))
-        server_socket.listen(5) # Listen for up to 5 queued connections
+        server_socket.listen(1) # Listen for up to 5 queued connections
         print(f"[INFO] Server listening on 0.0.0.0:{LISTEN_PORT}")
         print(f"[INFO] Forwarding incoming connections to {TARGET_HOST}:{TARGET_PORT}")
 
