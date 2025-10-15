@@ -18,8 +18,8 @@ import signal
 import time
 
 # Configuration from environment variables
-LISTEN_PORT = int(os.environ.get("LISTEN_PORT", 4000))
-TARGET_HOST = os.environ.get("TARGET_HOST", "13.245.46.90")
+LISTEN_PORT = int(os.environ.get("LISTEN_PORT", 10000))
+TARGET_HOST = os.environ.get("TARGET_HOST", '13.245.46.90')
 TARGET_PORT = int(os.environ.get("TARGET_PORT", 5722))
 BUFFER_SIZE = 4096  # 4KB buffer
 
